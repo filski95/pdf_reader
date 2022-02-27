@@ -6,7 +6,7 @@ from macro_files.excel_formating import create_combined_excel
 from macro_files.materials import Materials
 
 
-def run_macro():
+def run_macro() -> None:
     materials = Materials()
     small_components_list_pdf = pdf_reader.get_pdf_name()
     for list in small_components_list_pdf:
