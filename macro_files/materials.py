@@ -1,5 +1,6 @@
-import openpyxl as xl
 from typing import Optional, cast
+
+import openpyxl as xl
 
 
 class Materials:

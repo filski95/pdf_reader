@@ -1,9 +1,10 @@
-from genericpath import exists
-import openpyxl as xl
-from openpyxl import Workbook
-import pandas as pd
-from typing import Optional
 import os
+from typing import Optional
+
+import openpyxl as xl
+import pandas as pd
+from genericpath import exists
+from openpyxl import Workbook
 
 
 class OutputFile:
