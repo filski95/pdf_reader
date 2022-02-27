@@ -1,8 +1,9 @@
-from cgitb import small
-from black import put_trailing_semicolon_back
+from collections import defaultdict
+
+
+from macro_files import output_file, pdf_reader
+from macro_files.excel_formating import create_combined_excel
 from macro_files.materials import Materials
-from macro_files import pdf_reader
-from macro_files import output_file
 
 
 def run_macro():
@@ -14,6 +15,8 @@ def run_macro():
         picklist_locations = pdf_reader.get_locations(materials.materials_locations, picklist)
         output = output_file.OutputFile([picklist_locations], list)
         output.dump_data()
+
+    create_combined_excel()
 
 
 if __name__ == "__main__":

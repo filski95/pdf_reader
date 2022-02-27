@@ -15,7 +15,7 @@ def get_pdf_name(path: Optional[str] = None):
         path = "../excel_files"
 
     found_files = [file for file in os.listdir(path) if file.endswith(".pdf")]
-    return found_files  # * can be full list if solution for multiple files is implemented.
+    return found_files
 
 
 def read_pdf(file_name: str, path=None) -> list[str]:

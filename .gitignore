@@ -6,3 +6,4 @@ venv
 .DS_Store
 .vscode
 .mypy_cache
+test.py
